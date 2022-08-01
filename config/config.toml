@@ -30,4 +30,4 @@ level = "debug"
 
 [channel.file01]
 type="file"
-filename="/var/log/honeytrap.log"
+filename="/home/honeytrap.log"
