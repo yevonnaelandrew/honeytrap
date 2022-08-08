@@ -21,13 +21,13 @@ services=["telnet"]
 [channel.console]
 type="console"
 
+[channel.file01]
+type="file"
+filename="/home/honeytrap.log"
+
 [[filter]]
 channel=["console"]
 
 [[logging]]
 output = "stdout"
 level = "debug"
-
-[channel.file01]
-type="file"
-filename="/home/honeytrap.log"
