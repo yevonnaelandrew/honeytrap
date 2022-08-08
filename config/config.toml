@@ -18,15 +18,12 @@ server-name="WS-3244"
 port="tcp/5900"
 services=["telnet"]
 
-[channel.console]
-type="console"
-
-[channel.file01]
+[channel.file]
 type="file"
 filename="/home/honeytrap.log"
 
 [[filter]]
-channel=["console"]
+channel=["file"]
 
 [[logging]]
 output = "stdout"
