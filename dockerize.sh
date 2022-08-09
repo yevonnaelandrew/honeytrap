@@ -13,5 +13,5 @@ LDFLAGS="$(go run scripts/gen-ldflags.go)"
 echo $LDFLAGS
 
 cp $SRC/Dockerfile .
-docker build --build-arg LDFLAGS="$LDFLAGS" -t honeytrap:latest .
+docker build --build-arg LDFLAGS="$LDFLAGS" -t honeytrap_test:latest .
 popd
