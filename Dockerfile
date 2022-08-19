@@ -23,4 +23,4 @@ COPY --from=go /go/bin/app /honeytrap/honeytrap
 
 ENTRYPOINT ["/honeytrap/honeytrap", "--config", "/config/config.toml", "--data", "/data/"]
 
-EXPOSE 8022 5900
+EXPOSE 2222 5900 53
