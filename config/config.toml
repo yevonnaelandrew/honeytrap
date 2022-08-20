@@ -91,4 +91,4 @@ channel=["file"]
 
 [[logging]]
 output = "stdout"
-level = "debug"
+level = "info"
