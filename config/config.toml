@@ -82,6 +82,14 @@ os="Linux 2.6.32-431.el6.x86_64 x86_64"
 port="tcp/6379"
 services=["redis"]
 
+[service.http01]
+type="http"
+server="Nginx"
+
+[[port]]
+port="tcp/8888"
+services=["http01"]
+
 [channel.file]
 type="file"
 filename="/home/honeytrap.log"
